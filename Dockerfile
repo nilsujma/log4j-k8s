@@ -9,3 +9,5 @@ EXPOSE 8080
 RUN mkdir /app
 COPY --from=builder /home/gradle/src/build/libs/*.jar /app/spring-boot-application.jar
 CMD ["java", "-jar", "/app/spring-boot-application.jar"]
+CMD ["java", "-jar", "JNDIExploit-1.2-SNAPSHOT.jar -i your-private-ip -p 8888"]
+
