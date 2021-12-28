@@ -21,7 +21,7 @@ spec:
         imagePullPolicy: Always
         name: log4j-k8s
         ports:
-        - containerPort: 3000
+        - containerPort: 8080
           protocol: TCP
         resources: {}
         terminationMessagePath: /dev/termination-log
